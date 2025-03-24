@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+b,
+ul,
+button,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Atma", sans-serif;
+}
+
+b {
+  font-weight: 600;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ebcfb2;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  border-radius: 0px 0px 50px 50px;
+  background-color: #c96956;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Section 1: Photo and Description */
+.photo-description {
+  display: flex;
+  align-items: center;
+  padding: 50px 50px;
+  background-color: #d4b483;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.object {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  width: 350px;
+  height: 5%;
+  margin: 10px;
+  padding: 10px 10px;
+  background-color: #ecf0f1;
+  font-style: italic;
+}
+
+.card:hover .object {
+  position: absolute;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.profilephoto {
+  height: 200px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Section 2: Big Button */
+.big-button-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.big-button {
+  width: 80%;
+  padding: 30px 50px;
+  font-size: 24px;
+  background-color: #904402;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.big-button:hover {
+  background-color: #02829383;
+}
+
+.objects {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.object-body {
+  padding: 10px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.message {
+  font-size: 20px;
+  padding: 20px 100px;
+}
+
+.photo-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.photo {
+  height: 300px;
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.photo img {
+  position: relative;
+  width: 90%;
+  height: auto;
+}
+
+.album .responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.album .responsive-container-block.bg {
+  max-width: 1320px;
+  margin: 0 0 0 0;
+  justify-content: space-between;
+}
+
+.album .img {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.album .responsive-container-block.img-cont {
+  flex-direction: column;
+  max-width: 30%;
+  min-height: auto;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.album .img.img-big {
+  height: 50%;
+  margin: 0 0 16px 0;
+}
+
+.hidden {
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hidden-container {
+  background-color: #904402;
+  padding: 5px;
+  width: 15%;
+  border-radius: 5px;
+}
+
+.hidden-container:hover .hidden {
+  visibility: visible;
+
+  opacity: 1;
+}
+
+.special {
+  width: 100%;
+}
